@@ -4,7 +4,7 @@ short keypad4x4_connect() {
     return 0;
 }
 
-short keypad4x4_GPIOConfig() {
+short keypad4x4_GPIOConfig() { 
     int i = 0, j = 0;
     RCC_AHB1PeriphClockCmd(KEYPAD4x4_1_GPIO_CLK, ENABLE);
     if (KEYPAD4x4_1_GPIO_CLK != KEYPAD4x4_2_GPIO_CLK)
