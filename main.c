@@ -77,7 +77,7 @@ int main(void) {
 
     keypad4x4_GPIOConfig();
 
-    keypad4x4_Init(1, 1, 1, 1);
+    keypad4x4_Init(1, 1, 1, 1); 
     //GPIO_SetBits(GPIOD, GPIO_Pin_12);
     DelaySec(200);
     while (1) {
