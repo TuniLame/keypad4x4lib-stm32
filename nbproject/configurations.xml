@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="84">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df name="keypad-16" root=".">
+      <in>main.c</in>
+      <in>startup_stm32f4xx.s</in>
+      <in>stm32_keypad4x4.c</in>
+      <in>stm32_keypad4x4.h</in>
+      <in>stm32f4_discovery.h</in>
+      <in>stm32f4xx_conf.h</in>
+      <in>stm32f4xx_it.c</in>
+      <in>stm32f4xx_it.h</in>
+      <in>system_stm32f4xx.c</in>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>GNU_SAT|GNU</compilerSet>
+      </toolsSet>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath>IO_Toggle.elf</executablePath>
+          <cTool>
+            <incDir>
+              <pElem>../../STM32F4xx_StdPeriph_Driver/inc/device_support</pElem>
+              <pElem>../../STM32F4xx_StdPeriph_Driver/inc/core_support</pElem>
+              <pElem>../../STM32F4xx_StdPeriph_Driver/inc</pElem>
+            </incDir>
+          </cTool>
+        </makeTool>
+      </makefileType>
+      <item path="startup_stm32f4xx.s" ex="true" tool="4" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
