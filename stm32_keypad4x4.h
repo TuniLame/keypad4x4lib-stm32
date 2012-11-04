@@ -1,8 +1,18 @@
-/* 
- * File:   stm32_keypad4x4.h
- * Author: tunilame
+  /**
+ ******************************************************************************
+ * @file    stm32_keypad4x4.h
+ * @author  Tunilame
+ * @version V1.0.0
+ * @date    16-october-2012
+ * @brief   A 4x4 keypad library for stm32. H file
+ * @Website http://www.awataw.com
+ ******************************************************************************
+ * @attention
  *
- * Created on 16 octobre 2012, 12:08
+ * This library works only for STM32F4-Discovery.
+ *
+ * <h2><center>&copy; COPYLEFT 2012</center></h2>
+ ******************************************************************************  
  */
 
 #ifndef STM32_KEYPAD4X4_H

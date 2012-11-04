@@ -1,10 +1,28 @@
+  /**
+ ******************************************************************************
+ * @file    stm32_keypad4x4.c 
+ * @author  Tunilame
+ * @version V1.0.0
+ * @date    16-october-2012
+ * @brief   A 4x4 keypad library for stm32. C file.
+ * @Website http://www.awataw.com
+ ******************************************************************************
+ * @attention
+ *
+ * This library works only for STM32F4-Discovery.
+ *
+ * <h2><center>&copy; COPYLEFT 2012</center></h2>
+ ******************************************************************************  
+ */
+
 #include "stm32_keypad4x4.h"
 
 short keypad4x4_connect() {
     return 0;
 }
+// TODO make a keypad4x4_GPIOConfig() for STM32L and VL
 
-short keypad4x4_GPIOConfig() {   
+short keypad4x4_GPIOConfig() {
     int i = 0, j = 0;
     RCC_AHB1PeriphClockCmd(KEYPAD4x4_1_GPIO_CLK, ENABLE);
     if (KEYPAD4x4_1_GPIO_CLK != KEYPAD4x4_2_GPIO_CLK)
@@ -189,8 +207,9 @@ char keypad4x4_ReadChar() {
             }
         }
     }
-    
+
 }
+
 short keypad4x4_charToShort(char c) {
     switch (c) {
         case '1':
@@ -220,19 +239,10 @@ short keypad4x4_charToShort(char c) {
         case '9':
             return 9;
             break;
-        case 'A':
-            return 'A';
-            break;
-        case 'B':
-            return 'B';
-            break;
-        case 'C':
-            return 'C';
-            break;
-        case 'D':
-            return 'D';
-            break;
         case '0':
+            return 0;
+            break;
+        default:
             return 0;
             break;
     }
