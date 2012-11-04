@@ -1,5 +1,5 @@
-EXECUTABLE=IO_Toggle.elf
-BIN_IMAGE=IO_Toggle.bin
+EXECUTABLE=keypad4x4.elf
+BIN_IMAGE=keypad4x4.bin
 
 CC=arm-none-eabi-gcc
 OBJCOPY=arm-none-eabi-objcopy
