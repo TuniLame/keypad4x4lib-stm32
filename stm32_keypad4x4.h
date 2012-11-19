@@ -10,6 +10,7 @@
  * @attention
  *
  * This library works only for STM32F4-Discovery.
+ * 
  *
  * <h2><center>&copy; COPYLEFT 2012</center></h2>
  ******************************************************************************  
